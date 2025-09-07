@@ -2,7 +2,7 @@
 
 int main(){
    //Declara os valores de torre, bispo e rainha
-   int torre = 5, bispo = 5, rainha = 8, i;
+   int torre = 5, bispo = 5, rainha = 8, cavalo = 2, i, j;
    
    //Torre (usando "for")
    printf("Movimento da torre:\n");
@@ -35,5 +35,20 @@ int main(){
    //Pula a linha para separar as peças :
    printf("\n");
   
-  return 0;
+   //Cavalo (usando "loop/while")
+
+   printf("Movimento do cavalo:\n");
+   for( i = 1; i <= cavalo; i++ ) {
+    for ( j = 1; j <= cavalo; j++ ) {
+        printf("Cima...\n");
+    }
+    while( i < cavalo) {
+        printf("Direita...\n");
+        i++;
+    }
+    //Pula a linha para separar as peças :
+    printf("\n");
+   } 
+   
+   return 0;
 }
